@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="foodstyle.css">
+  <link rel="icon" href="images/logo.png" type="image">
+    <title>Vito's cafe |Food Menu</title>
+    <script src="https://kit.fontawesome.com/6cc2f75bcb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+    <!-- i am going to add another navigation elements to make this reponsive -->
+    <div class="headerbar">
+        <div class="account">
+            <ul >
+                <a href="#">
+                    <li><i class="fa-solid fa-house-chimney"></i></li>
+                </a>
+                <a href="#">
+                    <li><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i></li>
+                </a>
+                <div class="search" id="searchinput1">
+                    <input type="search">
+                    <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                </div>
+                <a href="login.html">
+                    <li>
+                        <i class="fa-solid fa-user" id="user-mb"></i>
+                    </li>
+                </a>
+                    </ul>
+        </div>
+        <div class="nav">
+            <ul>
+                <a href="home.html"><li>Home</li></a>
+                <a href="aboutus.html"><li>About</li></a>
+                <a href="foodmenu.html"><li>Food menu</li></a>
+                <a href="tablebooking.html"><li>Book table</li></a>
+                <a href="contactus.html"><li>contact us</li></a>
+                
+            </ul> 
+        </div>
+    </div>
+    <!-- this is the end of second navigation elements -->
+        <div class="logo">
+            <img src="images/icons/logo.png" alt="logo">
+                <h2>Vito's Cafe</h2>
+        </div>
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark" id = "hdcross"></i>
+        </div>
+       <div class="nav">
+        <ul>
+          <a href="home.html"><li>Home</li></a>
+          <a href="aboutus.html"><li>About</li></a>
+          <a href="foodmenu.html"><li class="currentpage">Food menu</li></a>
+          <a href="tablebooking.html"><li>Book table</li></a>
+          <a href="contactus.html"><li>contact us</li></a>
+        </ul> 
+        </div>
+    <div class="account">
+        <ul >
+            <a href="#">
+                <li><i class="fa-solid fa-house-chimney"></i></li>
+            </a>
+            <a href="#">
+                <li><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i></li>
+            </a>
+            <div class="search" id="searchinput2">
+                <input type="search">
+                <i class="fa-solid fa-magnifying-glass srchicon"></i>
+            </div>
+            <a href="login.html">
+                <li>
+                    <i class="fa-solid fa-user" id="user-lap"></i>
+                </li>
+            </a>
+                </ul>
+    </div>
+ 
+</div>
+</header>
+<!-- food menu design -->
+<div class="mainContainer">
+    <h1 class="Ftopic">Food Menu</h1>
+    <div class="btnclass" id="buttons">
+        <button class="btn1" onclick="filterObjects('all')">Show All</button>
+        <button class="btn1" onclick="filterObjects('snacks')">Snacks</button>
+        <button class="btn1" onclick="filterObjects('drinks')">drinks</button>
+        <button class="btn1" onclick="filterObjects('meals')">Meals</button>
+    </div>
+    <div class="foodcontainer">
+    <div class="fitem snacks">
+            <div class="fimg">
+                <img src="images/food/donuts.jpg" alt="Donuts">
+            </div>
+            <div class="fdisc">
+                <div class="foodtitle">
+                    <div class="favorite">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                    </div>
+                    <h4>Donuts</h4>
+                </div>
+                <p>Glazed, Chocolate, Jelly-filled</p>
+                <h5>12$</h5>
+            </div>
+    </div>      
+    <div class="fitem snacks">
+            <div class="fimg">
+                <img src="images/food/croissant.jpg" alt="Croissants">
+            </div>
+            <div class="fdisc">
+                <div class="foodtitle">
+                    <div class="favorite">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                    </div>
+                    <h4>Croissants</h4>
+                </div>
+                <p>Plain, Chocolate-filled, Almond</p>
+                <h5>12$</h5>
+            </div>
+    </div>
+    <div class="fitem snacks">
+            <div class="fimg">
+                <img src="images/food/rolls.jpg" alt="Rolls">
+            </div>
+            <div class="fdisc">
+                <div class="foodtitle">
+                    <div class="favorite">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                    </div>
+                    <h4>Rolls</h4>
+                </div>
+                <p>Cinnamon, Sausage, Cheese & spinach</p>
+                <h5>12$</h5>
+            </div>
+    </div>
+    <div class="fitem snacks">
+        <div class="fimg">
+            <img src="images/food/eclairs.jpg" alt="Eclairs">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Eclairs</h4>
+            </div>
+            <p>Chocolate, Coffee, Raspberry</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem snacks">
+        <div class="fimg">
+            <img src="images/food/eggbun.jpg" alt="Egg bun">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Egg bun</h4>
+            </div>
+            <p>Bacon, Sausage, Veggie</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem snacks">
+        <div class="fimg">
+            <img src="images/food/pastries.jpg" alt="Pastries">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Pastries</h4>
+            </div>
+            <p>Fruit-filled, Cheese Danish, Custard</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem snacks">
+        <div class="fimg">
+            <img src="images/food/sandwitches.jpg" alt="Sandwitches">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Sandwiches</h4>
+            </div>
+            <p>Turkey and Swiss, BLT, Caprese</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem snacks">
+        <div class="fimg">
+            <img src="images/food/cupcakes.jpg" alt="Cupcakes">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Cupcakes</h4>
+            </div>
+            <p>Vanilla, Chocolate, Red velvet</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem snacks">
+        <div class="fimg">
+            <img src="images/food/pancakes.jpg" alt="Pancakes">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Pancakes</h4>
+            </div>
+            <p>Buttermilk, Blueberry, Banana walnut</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem snacks">
+        <div class="fimg">
+            <img src="images/food/brownies.jpg" alt="Brownies">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Brownies</h4>
+            </div>
+            <p>Classic fudge,Peanut butter,chocolate</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem snacks">
+        <div class="fimg">
+            <img src="images/food/hotdogs.jpg" alt="Hot-dogs">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Hot-dogs</h4>
+            </div>
+            <p>mustard & ketchup, Chili cheese</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem snacks">
+        <div class="fimg">
+            <img src="images/food/caramelpudding.jpg" alt="Caramel pudding">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Caramel pudding</h4>
+            </div>
+            <p>Classic, Chocolate, Butterscotch</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem drinks">
+        <div class="fimg">
+            <img src="images/food/coffee.jpg" alt="Coffee">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Coffee</h4>
+            </div>
+            <p>Black, Cappuccino, Espresso</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem drinks">
+        <div class="fimg">
+            <img src="images/food/tea.png" alt="Tea">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Tea</h4>
+            </div>
+            <p>Green tea, Earl Grey, Chai</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem drinks">
+        <div class="fimg">
+            <img src="images/food/hotchocolate.jpg" alt="Hot Chocolate">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Hot Chocolate</h4>
+            </div>
+            <p>Classic, White chocolate, Peppermint</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem drinks">
+        <div class="fimg">
+            <img src="images/food/icedcoffee.jpg" alt="Iced Coffee">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Iced Coffee</h4>
+            </div>
+            <p>With cream and sugar, Mocha, Vanilla</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem drinks">
+        <div class="fimg">
+            <img src="images/food/icedtea.jpg" alt="Iced Tea">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Iced Tea</h4>
+            </div>
+            <p>Sweet, Lemon, Peach</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem drinks">
+        <div class="fimg">
+            <img src="images/food/fruitsmoothies.jpg" alt="Fruit Smoothies">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Fruit Smoothies</h4>
+            </div>
+            <p>Strawberry,banana,Mango,pineapple</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem drinks">
+        <div class="fimg">
+            <img src="images/food/milkshakes.jpg" alt="Milkshakes">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Milkshakes</h4>
+            </div>
+            <p>Chocolate, Vanilla, Strawberry</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem drinks">
+        <div class="fimg">
+            <img src="images/food/feluda.jpg" alt="Feluda">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Feluda</h4>
+            </div>
+            <p>Iced, Coffee-flavored, Pistachio</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem meals">
+        <div class="fimg">
+            <img src="images/food/noodles.jpg" alt="noodles">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Noodles-Dinner</h4>
+            </div>
+            <p>chineese, normal, vegan</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem meals">
+        <div class="fimg">
+            <img src="images/food/friedrice.jpg" alt="friedrice">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Friedrice-Lunch</h4>
+            </div>
+            <p>chineese, normal, vegan</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem meals">
+        <div class="fimg">
+            <img src="images/food/rice&curry.jpeg" alt="rice&curry">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>Rice & curry-Lunch</h4>
+            </div>
+            <p>fixed-menu</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    <div class="fitem meals">
+        <div class="fimg">
+            <img src="images/food/happymeal.jpg" alt="happymeal">
+        </div>
+        <div class="fdisc">
+            <div class="foodtitle">
+                <div class="favorite">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.3 80.6"><path d="M86.2 7c-9.4-9.4-24.6-9.4-33.9 0l-5.7 5.7L41 7C31.6-2.3 16.4-2.3 7 7c-9.3 9.4-9.3 24.6 0 34l5.7 5.7 33.9 33.9 33.9-33.9 5.7-5.7c9.4-9.4 9.4-24.6 0-34z"/></svg>
+                </div>
+                <h4>happy meal</h4>
+            </div>
+            <p>This is a offer</p>
+            <h5>12$</h5>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- footer design -->
+<footer>
+    <div class="footercontainer">
+        <div class="sec aboutdesc">
+            <h2>About Us</h2>
+            <p>Vito's Cafe is a cozy, community-focused spot in Mount Lavinia, offering exceptional coffee, delicious treats, and a warm, sustainable atmosphere where friends and neighbors gather to connect and unwind</p>
+            <ul class="sci">
+                <li><a href=""><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube fa-xl"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+          <h2>Support</h2>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Quick links</h2>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="foodmenu.html">food menu</a></li>
+                <li><a href="aboutus.html">about us</a></li>
+                <li><a href="login.html">Login</a></li>
+                </ul>
+        </div>
+        <div class="sec contactdetails">
+            <h2>Contact Us</h2>
+            <ul class="contactinfo">
+                <li><span><i class="fa-solid fa-phone"></i></span><p>
+                    <a href="tel:+947012121212">+9470 12121212</a>
+                </p></li>
+                <li><span><i class="fa-solid fa-envelope"></i></span><p>
+                    <a href="mailto:vitoscafe@gmail.com">vitoscafe@gmail.com</a>
+                </p></li>
+                <li><span><i class="fa-solid fa-address-book"></i></span>
+                <address>
+                    No.23,<br>Templers Road,<br>Mt. lavinia.
+                </address></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="copyrighttext">
+    <p>copyright &copy 2023 Eranga madhushan.All rights reserved.</p>
+</div>
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+
+
+ <script src="foodjs.js"></script>
+<!-- <script src="script.js"></script> -->
+</body>
+</html>
