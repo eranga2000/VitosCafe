@@ -10,7 +10,7 @@ Welcome to **Vito's Cafe**, a simple and elegant front-end website for a bakery.
 
 ## Demo
 
-You can see a live demo of the website [here](#) (Add live link if available).
+You can see a live demo of the website [here](#) ([Add live link if available](https://eranga2000.github.io/VitosCafe/)).
 
 ## Repository
 
